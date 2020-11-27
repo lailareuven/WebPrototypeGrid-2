@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Donate</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.typekit.net/tfr5syf.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+  <header class="header"><figure>
+				<a href="index.html"> <img src="logo.jpg" class = "logo"/>
+      </figure> 
+
+<nav>
+  <button class = "navbar"> <a href="aboutus.html">About Us</a> </button>
+  <button class = "navbar"> <a href="stories.html">Our Stories</a> </button>
+
+  <button class="currentpage2"><a href="donate.html">DONATE</a></button>
+  <button class="CTA"><a href="volunteer.html">VOLUNTEER</a></button>
+  </nav>
+  
+  </header>
+
+
+  <main class="main">
+ <h1>DONATE</h1>
+<h3>Brighten the life of an ill child and their family by donating today! 
+ <br> Any donation is greatly appreciated and will make a huge difference. </h3>
+
+ <ul class="flex-container">
+  <li class="flex-item"> <img src="donateimgs/donate1.jpg" class="donateimg"/></li>
+  <li class="flex-item"> <img src="donateimgs/donate2.jpg" class="donateimg"/> </li>
+  <li class="flex-item"> <img src="donateimgs/donate3.jpg" class="donateimg"/></li>
+</ul>
+  </main>
+  
+  <section class = "aside" >
+     <h2>Choose An Amount</h2>
+
+    <button class = "donateamt"> $39 </button>
+    <button class = "donateamt">$78 </button>
+    <button class="donateamt">$117</button>
+    <button class="donateamt">$195</button>
+    <input class ="donateamt" type="text" placeholder= "$ other" >
+
+
+
+<h2>Your Details</h2>
+<form id="Donate">
+		<ul>
+			<li>
+				<label for="name">First Name*</label>
+      				<input id="name" name="name" type="text" required>
+      			</li>
+            <li>
+      				<label for="name">Last Name*</label>
+      				<input id="name" name="name" type="text" required>
+      			</li>
+      		</ul>
+
+      		<ul>
+            <li>
+      				<label for="email">Email Address*</label>
+            <input type="email" id="email"
+            pattern="123@gmail.com" required>
+      			</li>
+            <li>
+      				<label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+      			</li>
+      		</ul>
+
+          <ul>
+            <li>
+      				<label for="street">Street</label>
+            <input type="street" class="form-control" id="autocomplete" size = "43">
+      			</li>
+            	</ul>
+
+              <ul>
+            <li>
+      				<label for="postcode">Post Code</label>
+          <input type="postcode" 
+                class="form-control" 
+                id="inputPostCode"  
+                minlength="4" size = "11">
+      			</li>
+            <li>
+              <label for="Suburb">Suburb</label>
+          <input type="Suburb" 
+                class="form-control" 
+                id="inputSuburb" >
+            </li>
+
+            <li>
+              <label for="State">State</label>
+          <select id="state" name="state">
+            <option value="NSW">NSW</option>
+            <option value="VIC">VIC</option>
+            <option value="QLD">QLD</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="NT">NT</option>
+            <option value="ACT">ACT</option>
+            <option value="TAS">TAS</option>
+          </select>
+            </li>
+      		</ul>
+      </form>
+
+<h2>Payment Details</h2>
+      <form id="Payment">
+		<ul>
+			<li>
+				<label for="cardnumber">Credit Card Number*</label>
+      				<input class="inputCard" type="number" min="1000" max="9999" name="creditCard1" id="creditCard1" required/> - <input class="inputCard" type="number" min="1000" max="9999" name="creditCard2" id="creditCard2" required/> - <input class="inputCard" type="number" min="1000" max="9999" name="creditCard3" id="creditCard3" required/> - <input class="inputCard" type="number" min="1000" max="9999"  name="creditCard4" id="creditCard4" required/>
+      			</li>
+      		</ul>
+
+              <ul>
+                <li><label for="security">Expiry Date</label><select name='expireMM' id='expireMM'>
+              <option value=''>Month</option>
+              <option value='01'>01</option>
+              <option value='02'>02</option>
+              <option value='03'>03</option>
+              <option value='04'>04</option>
+              <option value='05'>05</option>
+              <option value='06'>06</option>
+              <option value='07'>07</option>
+              <option value='08'>08</option>
+              <option value='09'>09</option>
+              <option value='10'>10</option>
+              <option value='11'>11</option>
+              <option value='12'>12</option>
+          </select> 
+          <select name='expireYY' id='expireYY'>
+              <option value=''>Year</option>
+              <option value='10'>2024</option>
+              <option value='10'>2023</option>
+              <option value='10'>2022</option>
+              <option value='11'>2021</option>
+              <option value='12'>2020</option>
+          </select> 
+          <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+          </li>
+            <li>
+      				<label for="security">Security Code</label>
+          <input type="security" 
+                class="form-control" 
+                id="inputSecurityCode" size = "9" placeholder="CVC">
+      			</li>
+
+      		</ul>
+
+          <ul>
+			    <li>
+				        <label for="cardname">Cardholder Name*</label>
+      				<input id="name" name="name" type="text" required size = "43">
+      			</li>
+      		</ul>
+      </form>
+
+
+
+      <button class="CTA"><a href="index.html">Donate Now</button></a>
+
+  
+    </section>
+
+
+
+
+
+
+  <footer class="footer">
+
+<!-- Social Media icons -->
+<a href="https://www.facebook.com/StarlightAustralia" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/starlightau/" class="fa fa-instagram"></a>
+<a href="https://twitter.com/Starlight_star" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/user/StarlightAus" class="fa fa-youtube"></a>
+
+
+</footer>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

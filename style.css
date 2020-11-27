@@ -1,0 +1,389 @@
+
+
+* {
+  font-family: vag-rundschrift-d, sans-serif;
+font-weight: 400; font-style: normal;
+}
+
+
+p {
+text-align:center;
+margin-right: 100px;
+margin-left: 100px; 
+font-family: poppins, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+/*------ flexbox structure https://css-tricks.com/snippets/css/a-guide-to-flexbox/ ------*/
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background-color: #d5b1f7;
+}
+
+.footer {
+  background-color:#522991;
+}
+
+.main {
+  text-align: center;
+  background-color: #d5b1f7;
+}
+
+.aside {
+background-color: #d5b1f7;
+}
+
+.banner {
+  background-color: #d5b1f7; 
+    padding: 10px;
+}
+
+.calltoaction {
+  background-color: #d5b1f7;
+}
+
+@media all and (min-width: 800px) {
+  body {
+    padding: 0;
+  }
+
+  .main    { flex: 3 0px; }
+  .banner { order: 1;  }
+  .main    { order: 2; }
+  .aside {order: 3; }
+  .calltoaction {order: 4; }
+  .footer  { order: 5; }
+}
+
+body {
+  padding: 2em; 
+}
+
+/* -------------form --------------- */
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+li.inline {
+  display:inline-block;
+}
+
+label {
+display:flex;
+font-family: poppins, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+input, select {
+  border-radius: 8px;
+  padding: 5px;
+  margin:auto;
+}
+
+/* --------------Index--------------- */
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin: none; 
+}
+
+.bannerimg {
+  max-width: 100%;
+  margin: none; 
+}
+
+/* -------------- Navigation Bar ------------- */
+
+.navbar {
+  background-color:#522991;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.navbar > a {
+color: white;
+text-decoration: none;
+}
+
+.navbar:hover {
+  background-color: #8b6fc1;
+  cursor: pointer; 
+}
+
+/* Donate and Volunteer buttons stand out */
+.CTA {
+  background-color: #fde64e;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 150px; 
+  margin-bottom: 20px;}
+  
+
+.CTA > a {
+color: #522991;
+text-decoration: none;
+}
+
+.CTA:hover {
+  background-color:lemonchiffon;
+  cursor: pointer; 
+}
+
+/* So that the user can easily identify what page they are on */
+.currentpage {
+  background-color: #8b6fc1;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 150px;
+}
+.currentpage > a {
+color: white;
+text-decoration: none;
+}
+
+.currentpage2 {
+  background-color:lemonchiffon;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 150px; 
+  margin-bottom: 20px;}
+  
+.currentpage2> a {
+color: #522991;
+text-decoration: none;
+}
+
+/* Register interest to volunteer */
+.interest {
+  background-color: #fde64e;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 300px; 
+  }
+
+.interest > a {
+color: #522991;
+text-decoration: none;
+}
+
+.interest:hover {
+  background-color:lemonchiffon;
+  cursor: pointer; 
+}
+
+
+/* Our Stories circular images and buttons */
+
+.stories {
+  background-color:#522991;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #522991;
+  width: 100px;
+  height: 100px;
+}
+
+.stories > a {
+color: #fde64e;
+text-decoration: none;
+font-size: 18px;
+}
+
+.kids {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  border-color: #fde64e;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+/* Choose an amount to donate- Donate Page */
+
+.donateamt {
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 10px;
+  width: 100px; 
+  margin-bottom: 20px;}
+}
+
+.donateamt > a {
+  text-decoration: none;
+  color: black;
+}
+
+.donateamt:hover {
+  background-color:lightgray;
+  cursor: pointer; 
+}
+
+/* -------- Make image layout responsive with flexbox ------ */
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  padding: 5px;
+  display: inline;
+}
+
+
+/* ----Video + Images ---- */
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  color: #522991;
+  text-align: center;
+}
+
+/* Large circular images */
+.programs {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  border-color: #fde64e;
+  width: 200px;
+  height: 200px;
+}
+
+/* Large rectangular images */
+.donateimg {
+border-style: solid;
+border-width: 4px;
+border-color: #fde64e;
+border-radius: 8px;
+height: 197px;
+width: 315px;
+}
+
+/* Rectangular images on Nora's Story */
+.noraimg {
+border-style: solid;
+border-width: 4px;
+border-color: #fde64e;
+border-radius: 8px;
+height: 197px;
+width: 315px;
+}
+
+/* --------- Social Media Icons ---------*/
+.fa {
+  padding: 20px ;
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+@media screen and (max-width: 560px) {
+  body {
+    padding: 0;
+  }
+
+  .banner {
+    padding: 10px;
+  }
+
+  p {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
