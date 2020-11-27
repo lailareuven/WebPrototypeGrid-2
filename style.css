@@ -323,8 +323,8 @@ border-style: solid;
 border-width: 4px;
 border-color: #fde64e;
 border-radius: 8px;
-height: 197px;
-width: 315px;
+height: 250px;
+width: 400px;
 }
 
 /* --------- Social Media Icons ---------*/
@@ -372,6 +372,8 @@ width: 315px;
 }
 
 
+/* -------- Responsive Design ---------- */
+
 @media screen and (max-width: 560px) {
   body {
     padding: 0;
@@ -385,5 +387,11 @@ width: 315px;
     margin-right: 0px;
     margin-left: 0px;
   }
+
+  .noraimg {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
